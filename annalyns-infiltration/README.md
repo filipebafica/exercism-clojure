@@ -8,7 +8,7 @@ If you get stuck on the exercise, check out `HINTS.md`, but try and solve it wit
 
 Booleans in Clojure are represented by `true` or `false`.
 
-Predicate functions (functions which return a boolean) will typically end with a quesion mark (`?`), but this is by convention only.
+Predicate functions (functions which return a boolean) will typically end with a question mark (`?`), but this is by convention only.
 
 The core library includes functions for logical operators such as `not`, `and`, and `or`.
 
@@ -34,7 +34,7 @@ You have four tasks: to implement the logic for determining if the above actions
 
 ## 1. Check if a fast attack can be made
 
-Implement the `can-fast-attack?` function that takes a boolean value that indicates if the knight is awake. This function returns `true` if a fast attack can be made based on the state of the knight. Otherwise, returns `false`:
+Implement the `can-fast-attack?` function, which takes a boolean value indicating whether the knight is awake. The function returns `true` if a fast attack can be made based on the state of the knight. Otherwise, it returns `false`:
 
 ```clojure
 (def knight-awake? true)
@@ -45,7 +45,7 @@ Implement the `can-fast-attack?` function that takes a boolean value that indica
 
 ## 2. Check if the group can be spied upon
 
-Implement the `can-spy?` function that takes three boolean values, indicating if the knight, archer and the prisoner, respectively, are awake. The function returns `true` if the group can be spied upon, based on the state of the three characters. Otherwise, returns `false`:
+Implement the `can-spy?` function, which takes three boolean values indicating whether the knight, archer and the prisoner, respectively, are awake. The function returns `true` if the group can be spied upon based on the state of the three characters. Otherwise, it returns `false`:
 
 ```clojure
 (def knight-awake? false)
@@ -58,7 +58,7 @@ Implement the `can-spy?` function that takes three boolean values, indicating if
 
 ## 3. Check if the prisoner can be signalled
 
-Implement the `can-signal-prisoner?` function that takes two boolean values, indicating if the archer and the prisoner, respectively, are awake. The function returns `true` if the prisoner can be signalled, based on the state of the two characters. Otherwise, returns `false`:
+Implement the `can-signal-prisoner?` function, which takes two boolean values indicating whether the archer and the prisoner, respectively, are awake. The function returns `true` if the prisoner can be signalled based on the state of the two characters. Otherwise, it returns `false`:
 
 ```clojure
 (def archer-awake? false)
@@ -70,7 +70,7 @@ Implement the `can-signal-prisoner?` function that takes two boolean values, ind
 
 ## 4. Check if the prisoner can be freed
 
-Implement the `can-free-prisoner?` function that takes four boolean values. The first three parameters indicate if the knight, archer and the prisoner, respectively, are awake. The last parameter indicates if Annalyn's pet dog is present. The function returns `true` if the prisoner can be freed based on the state of the three characters and Annalyn's pet dog presence. Otherwise, it returns `false`:
+Implement the `can-free-prisoner?` function, which takes four boolean values. The first three parameters indicate whether the knight, archer and the prisoner, respectively, are awake. The last parameter indicates whether Annalyn's pet dog is present. The function returns `true` if the prisoner can be freed based on the state of the three characters and Annalyn's pet dog presence. Otherwise, it returns `false`:
 
 ```clojure
 (def knight-awake? false)
